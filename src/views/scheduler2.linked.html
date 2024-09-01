@@ -55,42 +55,41 @@
 
         
 
-    <!-- Profile Details Section -->
-    <section class="profile-details">
-        <h2>Home/Linked/Unlinked</h2>
-
-        <div class="filters">
-            <select>
-                <option>Calender</option>
-            </select>
-            <select>
-                <option>Route</option>
-            </select>
-            <select>
-                <option>Shift</option>
-            </select>
-            <button>Search</button>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>EID</th>
-                    <th>BUS ID</th>
-                    <th>TIME</th>
-                    <th>LINK DUTY</th>
-                    <th>UNLINK DUTY</th>
-                    <th>STATUS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows would be dynamically generated -->
-                <tr>
-                    <td colspan="6" style="text-align: center;">No data available</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+            <section class="profile-details flex-grow-1 p-3">
+                <h2>Home/Linked/Unlinked</h2>
+            
+                <div class="filters d-flex mb-3">
+                    <select class="form-control mr-2">
+                        <option>Calendar</option>
+                    </select>
+                    <select class="form-control mr-2">
+                        <option>Route</option>
+                    </select>
+                    <select class="form-control mr-2">
+                        <option>Shift</option>
+                    </select>
+                    <button class="btn btn-success">Search</button>
+                </div>
+            
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>EID</th>
+                            <th>BUS ID</th>
+                            <th>TIME</th>
+                            <th>LINK DUTY TO</th>
+                            <th>UNLINK DUTY BY</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows would be dynamically generated -->
+                        <tr>
+                            <td colspan="6">No data available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
         </div>
     </div>

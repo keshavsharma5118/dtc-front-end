@@ -55,23 +55,29 @@
             </nav>
 
 
-            <!-- Profile Details Section -->
             <section class="profile-details">
                 <div class="profile-card">
-                    <button class="back-button">
-                        <span class="material-icons">arrow_back</span>
-                    </button>
-                    <h2>Profile Details</h2>
-                    <div class="profile-info-box">
-                        <div>Schedular ID: <span id="schedule-id"></span></div>
-                        <div>Name: <span id="schedule-name"></span></div>
-                        <div>Depot:<span id="schedule-depot"></span></div>
-                        <div>DOB: <span id="schedule-dob"></span></div>
-                        <div>Contact: <span id="schedule-contact"></span></div>
-                        <div>Email: <span id="schedule-email"></span></div>
+                    <!-- Header Section with Back Button and Title -->
+                    <div class="profile-header">
+                        <button class="back-button">
+                            <span class="material-icons">arrow_back</span>
+                        </button>
+                        <h2>Profile Details</h2>
                     </div>
-                    <div class="profile-avatar">
-                        <img src="/public/img/user.png" alt="Profile Avatar">
+            
+                    <!-- Content Section with Details and Avatar -->
+                    <div class="profile-content">
+                        <div class="profile-info-box">
+                            <div>Schedular ID: <span id="schedule-id"></span></div>
+                            <div>Name: <span id="schedule-name"></span></div>
+                            <div>Depot: <span id="schedule-depot"></span></div>
+                            <div>DOB: <span id="schedule-dob"></span></div>
+                            <div>Contact: <span id="schedule-contact"></span></div>
+                            <div>Email: <span id="schedule-email"></span></div>
+                        </div>
+                        <div class="profile-avatar">
+                            <img src="/public/img/user.png" alt="Profile Avatar">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -79,6 +85,7 @@
         </div>
     </div>
     <script src="/public/js/datetime.js"></script>
+    <script src="/public/js/script.js"></script>
 </body>
 
 </html>
