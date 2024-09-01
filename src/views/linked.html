@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTC Sahayak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* White Header */
+        .header-white {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-white .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-white .logo img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .government-logos img {
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        /* Yellow Sub-Header */
+        .header-yellow {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+
+        .profile-icon {
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        .schedular-id {
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+            background-color: #3b66ef;
+            padding: 20px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            background-color: #0d2ed1;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            background-color: rgb(255, 254, 254);
+            color: #090808;
+            font-weight: 500;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a.active {
+            background-color: #4CAF50;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #2E77BB;
+        }
+
+        /* Profile Details Section */
+        .profile-details {
+            flex-grow: 1;
+            background-color: #3b66ef;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .profile-details h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .filters {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filters select {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .filters button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .filters button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #537BE5;
+            color: white;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        table th {
+            background-color: #7AA3F0;
+        }
+
+        table tr:hover {
+            background-color: #4f82e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="images/dtc.png" alt="DTC Emblem">
+                <h1 style="font-size: 50px;">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="images/emblem.png" alt="Indian Government">
+                <img src="images/india.png" alt="Indian Flag">
+                <img src="images/azadi.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <span class="material-icons profile-icon">account_circle</span>
+                <span class="schedular-id">Schedular #ID</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#"class="active">Linked/Unlinked</a></li>
+                    <li><a href="#">Route Status</a></li>
+                    <li><a href="#">Schedule Duty</a></li>
+                    <li><a href="#">Scheduled Trips</a></li>
+                    <li><a href="#">Crew Availability</a></li>
+                </ul>
+            </nav>
+
+            <!-- Profile Details Section -->
+            <section class="profile-details">
+                <h2>Home/Linked/Unlinked</h2>
+
+                <div class="filters">
+                    <select>
+                        <option>Calender</option>
+                    </select>
+                    <select>
+                        <option>Route</option>
+                    </select>
+                    <select>
+                        <option>Shift</option>
+                    </select>
+                    <button>Search</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>EID</th>
+                            <th>BUS ID</th>
+                            <th>TIME</th>
+                            <th>LINK DUTY</th>
+                            <th>UNLINK DUTY</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows would be dynamically generated -->
+                        <tr>
+                            <td colspan="6" style="text-align: center;">No data available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

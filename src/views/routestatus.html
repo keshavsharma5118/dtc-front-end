@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTC Sahayak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* White Header */
+        .header-white {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-white .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-white .logo img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .government-logos img {
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        /* Yellow Sub-Header */
+        .header-yellow {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+
+        .profile-icon {
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        .schedular-id {
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+            background-color: #3b66ef;
+            padding: 20px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            background-color: #0d2ed1;
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            background-color: rgb(255, 254, 254);
+            color: #090808;
+            font-weight: 500;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a.active {
+            background-color: #4CAF50;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #2E77BB;
+        }
+
+        /* Profile Details Section */
+        .profile-details {
+            flex-grow: 1;
+            background-color: #3b66ef;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .depot-selector,
+        .route-details {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            color: #000;
+            flex: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .depot-selector h3,
+        .route-details h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .depot-selector select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #0044cc;
+            font-size: 16px;
+            margin-bottom: 15px;
+            background-color: #0044cc;
+            color: #fff;
+        }
+
+        .routes-found button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f0a500;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .routes-found button:hover {
+            background-color: #f09300;
+        }
+
+        .route-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="images/dtc.png" alt="DTC Emblem">
+                <h1 style="font-size: 50px;">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="images/emblem.png" alt="Indian Government">
+                <img src="images/india.png" alt="Indian Flag">
+                <img src="images/azadi.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <span class="material-icons profile-icon">account_circle</span>
+                <span class="schedular-id">Schedular #ID</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Linked/Unlinked</a></li>
+                    <li><a href="#" class="active">Route Status</a></li>
+                    <li><a href="#">Schedule Duty</a></li>
+                    <li><a href="#">Scheduled Trips</a></li>
+                    <li><a href="#">Crew Availability</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Section with Depot Selector and Route Details -->
+            <section class="profile-details">
+                <div class="depot-selector">
+                    <h3>Select DEPOT</h3>
+                    <select>
+                        <option>DEPOTS</option>
+                    </select>
+                    <h3>Routes Found:</h3>
+                    <div class="routes-found">
+                        <button>Route 123</button>
+                        <button>Route 456</button>
+                        <button>Route 789</button>
+                    </div>
+                </div>
+                <div class="route-details">
+                    <h3>Route: 123</h3>
+                    <img src="https://via.placeholder.com/500x300" alt="Route Map">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
