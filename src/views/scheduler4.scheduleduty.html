@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>schedule duty</title>
+    <title>Schedule Duty</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/util.css">
     <link rel="stylesheet" href="/public/css/schedule.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 </head>
 
 <body>
@@ -30,13 +29,12 @@
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/src/views/Scheduler-profile.html"><span class="profile-icon"><img src="/public/img/user.png" alt="user" height="40px" ></a></span>
-                <span class="schedular-id">Schedular #ID</span>
+                <a href="/src/views/Scheduler-profile.html"><span class="profile-icon"><img src="/public/img/user.png" alt="user" height="40px"></span></a>
+                <span class="schedular-id">Scheduler #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
                 <span class="material-icons logout-icon">logout</span>
-
             </div>
         </header>
 
@@ -70,12 +68,8 @@
                         <select>
                             <option>Destination</option>
                         </select>
-                        <select>
-                            <option>Date</option>
-                        </select>
-                        <select>
-                            <option>Time</option>
-                        </select>
+                        <input type="date" name="date">
+                        <input type="time" name="time">
                         <select>
                             <option>Driver</option>
                         </select>

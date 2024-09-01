@@ -1,34 +1,4 @@
-  /* Profile Details Section */
-  .profile-details {
-    flex-grow: 1;
-    background-color: #3b66ef;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.schedule-duty {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    color: #000;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.schedule-duty h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #fff;
-}
-
+/* Schedule Form Section */
 .schedule-form {
     display: flex;
     flex-wrap: wrap;
@@ -39,14 +9,26 @@
     border-radius: 10px;
 }
 
-.schedule-form select {
-    width: calc(14% - 10px);
+.schedule-form select,
+.schedule-form input[type="date"],
+.schedule-form input[type="time"] {
+    width: calc(14% - 10px); /* Increase width for better alignment */
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #0044cc;
     font-size: 16px;
     background-color: #fff;
     color: #000;
+}
+
+.schedule-duty h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff; /* White text for better visibility */
+    background-color: #ffa500; /* Orange background for the breadcrumb */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .submit-btn {
