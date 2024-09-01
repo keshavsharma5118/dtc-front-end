@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTC Sahayak</title>
+    <title>link status</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/util.css">
     <link rel="stylesheet" href="/public/css/linked.css">
-    <link rel="stylesheet" href="linked.css">
-    <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -25,7 +23,7 @@
             <div class="government-logos">
                 <img src="/public/img/emblem.png" alt="Indian Government">
                 <img src="/public/img/india.png" alt="Indian Flag">
-                <img src="/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <img src="/public/img/Azadi1.png" alt="Azadi Ka Amrit Mahotsav">
             </div>
         </header>
 
@@ -46,56 +44,75 @@
             <!-- Sidebar Navigation -->
             <nav class="sidebar">
                 <ul>
-                    <li><a href="scheduler1.dashboard.html">Dashboard</a></li>
-                    <li><a href="scheduler2.linked.html" class="active">Linked/Unlinked</a></li>
-                    <li><a href="scheduler3.routestatus.html">Route Status</a></li>
-                    <li><a href="scheduler4.scheduleduty.html">Schedule Duty</a></li>
-                    <li><a href="scheduler5.scheduledtrips.html">Scheduled Trips</a></li>
-                    <li><a href="scheduler6.crew.html">Crew Availability</a></li>
+                    <li><a href="/src/views/scheduler1.dashboard.html">Dashboard</a></li>
+                    <li><a href="/src/views/scheduler2.linked.html" class="active">Linked/Unlinked</a></li>
+                    <li><a href="/src/views/scheduler3.routestatus.html">Route Status</a></li>
+                    <li><a href="/src/views/scheduler4.scheduleduty.html">Schedule Duty</a></li>
+                    <li><a href="/src/views/scheduler5.scheduledtrips.html">Scheduled Trips</a></li>
+                    <li><a href="/src/views/scheduler6.crew.html" >Crew Availability</a></li>
                 </ul>
             </nav>
 
-                       <!-- Profile Details Section -->
-                       <section class="profile-details">
-                        <h2>Home/Linked/Unlinked</h2>
         
-                        <div class="filters">
-                            <select>
-                                <option>Calender</option>
-                            </select>
-                            <select>
-                                <option>Route</option>
-                            </select>
-                            <select>
-                                <option>Shift</option>
-                            </select>
-                            <button>Search</button>
-                        </div>
-        
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>EID</th>
-                                    <th>BUS ID</th>
-                                    <th>TIME</th>
-                                    <th>LINK DUTY</th>
-                                    <th>UNLINK DUTY</th>
-                                    <th>STATUS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Rows would be dynamically generated -->
-                                <tr>
-                                    <td colspan="6" style="text-align: center;">No data available</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-        
+
+    <!-- Profile Details Section -->
+    <section class="profile-details">
+        <h2>Home/Linked/Unlinked</h2>
+
+        <div class="filters">
+            <select>
+                <option>Calender</option>
+            </select>
+            <select>
+                <option>Route</option>
+            </select>
+            <select>
+                <option>Shift</option>
+            </select>
+            <button>Search</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>EID</th>
+                    <th>BUS ID</th>
+                    <th>TIME</th>
+                    <th>LINK DUTY</th>
+                    <th>UNLINK DUTY</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows would be dynamically generated -->
+                <tr>
+                    <td colspan="6" style="text-align: center;">No data available</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
         </div>
     </div>
     <script src="/public/js/datetime.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

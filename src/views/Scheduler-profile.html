@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTC Sahayak</title>
+    <title>schedular profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/util.css">
     <link rel="stylesheet" href="/public/css/profile.css">
@@ -23,16 +23,17 @@
             <div class="government-logos">
                 <img src="/public/img/emblem.png" alt="Indian Government">
                 <img src="/public/img/india.png" alt="Indian Flag">
-                <img src="/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <img src="/public/img/Azadi1.png" alt="Azadi Ka Amrit Mahotsav">
             </div>
         </header>
 
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/src/views/Scheduler-profile.html"><span class="profile-icon"><img src="/public/img/user.png" alt="user" height="40px" ></a></span>
+                <a href="/src/views/Scheduler-profile.html"><span class="profile-icon" class="active"><img src="/public/img/user.png"
+                            alt="user" height="40px"></a></span>
                 <span class="schedular-id">Schedular #ID</span>
-            </div>
+            </div> 
             <div class="logout-time">
                 <span id="datetime"></span>
                 <span class="material-icons logout-icon">logout</span>
@@ -52,27 +53,29 @@
                     <li><a href="/src/views/scheduler6.crew.html">Crew Availability</a></li>
                 </ul>
             </nav>
-  <!-- Profile Details Section -->
-  <section class="profile-details">
-    <div class="profile-card">
-        <button class="back-button">
-            <span class="material-icons">arrow_back</span>
-        </button>
-        <h2>Profile Details</h2>
-        <div class="profile-info-box">
-            <div>Schedular ID: <span id="schedule-id"></span></div>
-            <div>Name: <span id="schedule-name"></span></div>
-            <div>Depot:<span id="schedule-depot"></span></div>
-            <div>DOB: <span id="schedule-dob"></span></div>
-            <div>Contact: <span id="schedule-contact"></span></div>
-            <div>Email: <span id="schedule-email"></span></div>
-        </div>
-        <div class="profile-avatar">
-            <img src="/public/img/user.png" alt="Profile Avatar">
-        </div>
-    </div>
-</section>
-        
+
+
+            <!-- Profile Details Section -->
+            <section class="profile-details">
+                <div class="profile-card">
+                    <button class="back-button">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <h2>Profile Details</h2>
+                    <div class="profile-info-box">
+                        <div>Schedular ID: <span id="schedule-id"></span></div>
+                        <div>Name: <span id="schedule-name"></span></div>
+                        <div>Depot:<span id="schedule-depot"></span></div>
+                        <div>DOB: <span id="schedule-dob"></span></div>
+                        <div>Contact: <span id="schedule-contact"></span></div>
+                        <div>Email: <span id="schedule-email"></span></div>
+                    </div>
+                    <div class="profile-avatar">
+                        <img src="/public/img/user.png" alt="Profile Avatar">
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
     <script src="/public/js/datetime.js"></script>

@@ -1,68 +1,6 @@
 
 
-        .profile-info {
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: 500;
-        }
-
-        .profile-icon {
-            margin-right: 10px;
-            color: #fff;
-        }
-
-        .schedular-id {
-            font-weight: 500;
-            color: #333;
-        }
-
-        /* Main Content Layout */
-        .main-content {
-            display: flex;
-            flex-grow: 1;
-            background-color: #3b66ef;
-            padding: 20px;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            background-color: #0d2ed1;
-            width: 250px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-right: 20px;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 20px;
-        }
-
-        .sidebar ul li a {
-            text-decoration: none;
-            background-color: rgb(255, 254, 254);
-            color: #090808;
-            font-weight: 500;
-            font-size: 18px;
-            display: block;
-            padding: 10px;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        .sidebar ul li a.active {
-            background-color: #4CAF50;
-        }
-
-        .sidebar ul li a:hover {
-            background-color: #2E77BB;
-        }
+      
 
         /* Profile Details Section */
         .profile-details {
