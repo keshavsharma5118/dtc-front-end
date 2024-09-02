@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTC Sahayak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/man.util.css">
+    <link rel="stylesheet" href="/public/css/man.dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/public/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Sahayak</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/public/img/emblem.png" alt="Indian Government">
+                <img src="/public/img/india.png" alt="Indian Flag">
+                <img src="/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <a href="/src/views/man.profile.html"> <span class="profile-icon"><img src="/public/img/user1.png" alt="user" height="40px" ></span></a>
+                <span class="schedular-id">Manager #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/src/views/man1.dashboard.html" class="active" >Dashboard</a></li>
+                    <li><a href="/src/views/man2.available.html">Availabilty</a></li>
+                    <li><a href="/src/views/man3.scheduletrips.html">Scheduled Trips</a></li>
+                    <li><a href="/src/views/man4.linked.html">Linked/Unlinked</a></li>
+                    <li><a href="/src/views/man5.addemp.html">Add Employee</a></li>
+                    <li><a href="/src/views/man6.employeereq.html">Employee Request</a></li>
+                </ul>
+            </nav>
+
+
+
+       
+
+            
+            <div class="main-content">
+                <!-- Sidebar Navigation -->
+                
+            
+                <!-- Profile Details Section -->
+                <div class="profile-details">
+                    <div class="running-status">
+                        <button class="status-button">Running Status</button>
+                    </div>
+                    <div class="status-table">
+                        <div class="table-header">
+                            <div class="header-item">Bus ID</div>
+                            <div class="header-item">Route ID</div>
+                            <div class="header-item">Driver ID</div>
+                            <div class="header-item">Conductor ID</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                            <div class="row-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+        
+        </div>
+    </div>
+    <script src="/public/js/datetime.js"></script>
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>
