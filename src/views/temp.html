@@ -16,26 +16,33 @@
         <!-- White Header -->
         <header class="header-white">
             <div class="logo">
-                <img src="/dtc-front-end/public/img/dtc.png" alt="DTC Emblem">
+                <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/mcuhosdg9xuwvszdkovb.png" alt="DTC Emblem">
                 <h1 id="dtc">DTC Sahayak</h1>
             </div>
             <div class="government-logos">
-                <img src="/dtc-front-end/public/img/emblem.png" alt="Indian Government">
-                <img src="/dtc-front-end/public/img/india.png" alt="Indian Flag">
-                <img src="/dtc-front-end/public/img/Azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <div class="government-logos">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/cko2rhkoalj1og4wnjva.png" alt="Indian Government">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/uija8eq4p0kxnuyg6zg7.png" alt="Indian Flag">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/hhziq6hib1brkgpftx5b.png" alt="Azadi Ka Amrit Mahotsav">
+                </div>
             </div>
         </header>
 
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/dtc-front-end/src/views/Scheduler-profile.html"><span class="profile-icon"><img src="/dtc-front-end/public/img/user.png" alt="user" height="40px" ></a></span>
+                <a href="/views/Scheduler-profile.html"><span class="profile-icon"><img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/rdnfx25t0j7gw6hduvku.png" alt="user" height="40px" ></a></span>
                 <span class="schedular-id">Schedular #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
-                <span class="material-icons logout-icon">logout</span>
-
+                <span>
+                    <!-- Anchor tag for logout with the icon -->
+                  <a href="/api/v1/users/login" class="logout-link">
+                        <i class="material-icons logout-icon">logout</i> <!-- Material icon for logout -->
+                    </a> <!-- Material icon for logout -->
+                    </a>
+                </span>
             </div>
         </header>
 
@@ -43,19 +50,19 @@
             <!-- Sidebar Navigation -->
             <nav class="sidebar">
                 <ul>
-                    <li><a href="/dtc-front-end/src/views/scheduler1.dashboard.html">Dashboard</a></li>
-                    <li><a href="/dtc-front-end/src/views/scheduler2.linked.html">Linked/Unlinked</a></li>
-                    <li><a href="/dtc-front-end/src/views/scheduler3.routestatus.html">Route Status</a></li>
-                    <li><a href="/dtc-front-end/src/views/scheduler4.scheduleduty.html">Schedule Duty</a></li>
-                    <li><a href="/dtc-front-end/src/views/scheduler5.scheduledtrips.html">Scheduled Trips</a></li>
-                    <li><a href="/dtc-front-end/src/views/scheduler6.crew.html" >Crew Availability</a></li>
+                    <li><a href="/views/scheduler1.dashboard.html">Dashboard</a></li>
+                    <li><a href="/views/scheduler2.linked.html">Linked/Unlinked</a></li>
+                    <li><a href="/views/scheduler3.routestatus.html">Route Status</a></li>
+                    <li><a href="/views/scheduler4.scheduleduty.html">Schedule Duty</a></li>
+                    <li><a href="/views/scheduler5.scheduledtrips.html">Scheduled Trips</a></li>
+                    <li><a href="/views/scheduler6.crew.html" >Crew Availability</a></li>
                 </ul>
             </nav>
 
         
         </div>
     </div>
-    <script src="/dtc-front-end/public/js/datetime.js"></script>
+    <script src="/js/datetime.js"></script>
 </body>
 
 </html>

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DTC Sahayak</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/man.util.css">
+    <link rel="stylesheet" href="/css/sch.util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/profile.css">
+    <link rel="stylesheet" href="/css/profile.css">
 </head>
 
 <body>
@@ -17,25 +17,33 @@
         <!-- White Header -->
         <header class="header-white">
             <div class="logo">
-                <img src="/dtc-front-end/public/img/dtc.png" alt="DTC Emblem">
+                <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/mcuhosdg9xuwvszdkovb.png" alt="DTC Emblem">
                 <h1 id="dtc">DTC Sahayak</h1>
             </div>
             <div class="government-logos">
-                <img src="/dtc-front-end/public/img/emblem.png" alt="Indian Government">
-                <img src="/dtc-front-end/public/img/india.png" alt="Indian Flag">
-                <img src="/dtc-front-end/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <div class="government-logos">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/cko2rhkoalj1og4wnjva.png" alt="Indian Government">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/uija8eq4p0kxnuyg6zg7.png" alt="Indian Flag">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/hhziq6hib1brkgpftx5b.png" alt="Azadi Ka Amrit Mahotsav">
+                </div>
             </div>
         </header>
 
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <span class="profile-icon"><img src="/dtc-front-end/public/img/user1.png" alt="user" height="40px" ></span>
-                <span class="schedular-id">Manager #ID</span>
+                <span class="profile-icon"><img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/rdnfx25t0j7gw6hduvku.png" alt="user" height="40px" ></span>
+                <span class="schedular-id">Scheduler #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
-                <span class="material-icons logout-icon">logout</span>
+                <span>
+                    <!-- Anchor tag for logout with the icon -->
+                  <a href="/api/v1/users/login" class="logout-link">
+                        <i class="material-icons logout-icon">logout</i> <!-- Material icon for logout -->
+                    </a> <!-- Material icon for logout -->
+                    </a>
+                </span>
 
             </div>
         </header>
@@ -44,12 +52,12 @@
             <!-- Sidebar Navigation -->
             <nav class="sidebar">
                 <ul>
-                    <li><a href="/dtc-front-end/src/views/man1.dashboard.html" >Dashboard</a></li>
-                    <li><a href="/dtc-front-end/src/views/man2.available.html">Availabilty</a></li>
-                    <li><a href="/dtc-front-end/src/views/man3.scheduletrips.html">Scheduled Trips</a></li>
-                    <li><a href="/dtc-front-end/src/views/man4.linked.html">Linked/Unlinked</a></li>
-                    <li><a href="/dtc-front-end/src/views/man5.addemp.html">Add Employee</a></li>
-                    <li><a href="/dtc-front-end/src/views/man6.employeereq.html">Employee Request</a></li>
+                    <li><a href="/api/v1/users/sch/dashboard">Dashboard</a></li>
+                    <li><a href="/api/v1/users/sch/linked">Linked/Unlinked</a></li>
+                    <li><a href="/api/v1/users/sch/routestatus">Route Status</a></li>
+                    <li><a href="/api/v1/users/sch/scheduleduty">Schedule Duty</a></li>
+                    <li><a href="/api/v1/users/sch/scheduledtrips">Scheduled Trips</a></li>
+                    <li><a href="/api/v1/users/sch/crew">Crew Availability</a></li>
                 </ul>
             </nav>
 
@@ -65,7 +73,7 @@
     <div class="profile-content">
         <div class="profile-info2">
             <div class="info-item">
-                <span>Manager ID: #12345</span>
+                <span>Scheduler ID: #12345</span>
             </div>
             <div class="info-item">
                 <span>Name: XYZ KUMAR</span>
@@ -80,7 +88,7 @@
                 <span>Contact: 993****259</span>
             </div>
             <div class="info-item">
-                <span>Email: manager@dtc.com</span>
+                <span>Email: scheduler@dtc.com</span>
             </div>
         </div>
         <div class="profile-image">
@@ -94,8 +102,8 @@
         
         </div>
     </div>
-    <script src="/dtc-front-end/public/js/datetime.js"></script>
-    <script src="/dtc-front-end/public/js/script.js"></script>
+    <script src="/js/datetime.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

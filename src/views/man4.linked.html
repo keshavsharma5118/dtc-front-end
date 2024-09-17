@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DTC Sahayak</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/man.util.css">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/man4.linked.css">
+    <link rel="stylesheet" href="/css/man.util.css">
+    <link rel="stylesheet" href="/css/man4.linked.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -16,25 +16,33 @@
         <!-- White Header -->
         <header class="header-white">
             <div class="logo">
-                <img src="/dtc-front-end/public/img/dtc.png" alt="DTC Emblem">
+                <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/mcuhosdg9xuwvszdkovb.png" alt="DTC Emblem">
                 <h1 id="dtc">DTC Sahayak</h1>
             </div>
             <div class="government-logos">
-                <img src="/dtc-front-end/public/img/emblem.png" alt="Indian Government">
-                <img src="/dtc-front-end/public/img/india.png" alt="Indian Flag">
-                <img src="/dtc-front-end/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <div class="government-logos">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/cko2rhkoalj1og4wnjva.png" alt="Indian Government">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/uija8eq4p0kxnuyg6zg7.png" alt="Indian Flag">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/hhziq6hib1brkgpftx5b.png" alt="Azadi Ka Amrit Mahotsav">
+                </div>
             </div>
         </header>
 
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/dtc-front-end/src/views/man.profile.html"> <span class="profile-icon"><img src="/dtc-front-end/public/img/user1.png" alt="user" height="40px" ></span></a>
+                <a href="/api/v1/users/man/profile"> <span class="profile-icon"><img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565223/sih2024/st5cqv1axaiskvkqvz9a.png" alt="user" height="40px" ></span></a>
                 <span class="schedular-id">Manager #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
-                <span class="material-icons logout-icon">logout</span>
+                <span>
+                    <!-- Anchor tag for logout with the icon -->
+                  <a href="/api/v1/users/login" class="logout-link">
+                        <i class="material-icons logout-icon">logout</i> <!-- Material icon for logout -->
+                    </a> <!-- Material icon for logout -->
+                    </a>
+                </span>
 
             </div>
         </header>
@@ -43,12 +51,12 @@
             <!-- Sidebar Navigation -->
             <nav class="sidebar">
                 <ul>
-                    <li><a href="/dtc-front-end/src/views/man1.dashboard.html" >Dashboard</a></li>
-                    <li><a href="/dtc-front-end/src/views/man2.available.html">Availabilty</a></li>
-                    <li><a href="/dtc-front-end/src/views/man3.scheduletrips.html">Scheduled Trips</a></li>
-                    <li><a href="/dtc-front-end/src/views/man4.linked.html" class="active">Linked/Unlinked</a></li>
-                    <li><a href="/dtc-front-end/src/views/man5.addemp.html">Add Employee</a></li>
-                    <li><a href="/dtc-front-end/src/views/man6.employeereq.html">Employee Request</a></li>
+                    <li><a href="/api/v1/users/man/dashboard" >Dashboard</a></li>
+                    <li><a href="/api/v1/users/man/available">Availability</a></li>
+                    <li><a href="/api/v1/users/man/scheduletrips">Scheduled Trips</a></li>
+                    <li><a href="/api/v1/users/man/linked" class="active">Linked/Unlinked</a></li>
+                    <li><a href="/api/v1/users/man/addemp">Add Employee</a></li>
+                    <li><a href="/api/v1/users/man/employeereq">Employee Request</a></li>
                 </ul>
             </nav>
 
@@ -112,8 +120,8 @@
         
         </div>
     </div>
-    <script src="/dtc-front-end/public/js/datetime.js"></script>
-    <script src="/dtc-front-end/public/js/script.js"></script>
+    <script src="/js/datetime.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

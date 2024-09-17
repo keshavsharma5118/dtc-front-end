@@ -7,8 +7,8 @@
     <title>Schedule Duty</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/sch.util.css">
-    <link rel="stylesheet" href="/dtc-front-end/public/css/sch.schedule.css">
+    <link rel="stylesheet" href="/css/sch.util.css">
+    <link rel="stylesheet" href="/css/sch.schedule.css">
 </head>
 
 <body>
@@ -16,29 +16,37 @@
         <!-- White Header -->
         <header class="header-white">
             <div class="logo">
-                <img src="/dtc-front-end/public/img/dtc.png" alt="DTC Emblem">
+                <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/mcuhosdg9xuwvszdkovb.png" alt="DTC Emblem">
                 <h1 id="dtc">DTC Sahayak</h1>
             </div>
             <div class="government-logos">
-                <img src="/dtc-front-end/public/img/emblem.png" alt="Indian Government">
-                <img src="/dtc-front-end/public/img/india.png" alt="Indian Flag">
-                <img src="/dtc-front-end/public/img/azadi1.png" alt="Azadi Ka Amrit Mahotsav">
+                <div class="government-logos">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/cko2rhkoalj1og4wnjva.png" alt="Indian Government">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/uija8eq4p0kxnuyg6zg7.png" alt="Indian Flag">
+                    <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565221/sih2024/hhziq6hib1brkgpftx5b.png" alt="Azadi Ka Amrit Mahotsav">
+                </div>
             </div>
         </header>
 
         <!-- Yellow Sub-Header -->
         <header class="header-yellow">
             <div class="profile-info">
-                <a href="/dtc-front-end/src/views/Sch.profile.html">
+                <a href="/api/v1/users/sch/profile">
                     <span class="profile-icon">
-                        <img src="/dtc-front-end/public/img/user.png" alt="user" height="40px">
+                        <img src="https://res.cloudinary.com/djs6fkhxl/image/upload/v1726565222/sih2024/rdnfx25t0j7gw6hduvku.png" alt="user" height="40px">
                     </span>
                 </a>
-                <span class="schedular-id">Scheduler #ID</span>
+                <span class="schedular-id">sch #ID</span>
             </div>
             <div class="logout-time">
                 <span id="datetime"></span>
-                <span class="material-icons logout-icon">logout</span>
+                <span>
+                    <!-- Anchor tag for logout with the icon -->
+                    <a href="/api/v1/users/login" class="logout-link">
+                        <i class="material-icons logout-icon">logout</i> <!-- Material icon for logout -->
+                    </a> <!-- Material icon for logout -->
+                    </a>
+                </span>
             </div>
         </header>
 
@@ -46,12 +54,12 @@
             <!-- Sidebar Navigation -->
             <nav class="sidebar">
                 <ul>
-                    <li><a href="/dtc-front-end/src/views/sch1.dashboard.html">Dashboard</a></li>
-                    <li><a href="/dtc-front-end/src/views/sch2.linked.html">Linked/Unlinked</a></li>
-                    <li><a href="/dtc-front-end/src/views/sch3.routestatus.html">Route Status</a></li>
-                    <li><a href="/dtc-front-end/src/views/sch4.scheduleduty.html" class="active">Schedule Duty</a></li>
-                    <li><a href="/dtc-front-end/src/views/sch5.scheduledtrips.html">Scheduled Trips</a></li>
-                    <li><a href="/dtc-front-end/src/views/sch6.crew.html">Crew Availability</a></li>
+                    <li><a href="/api/v1/users/sch/dashboard">Dashboard</a></li>
+                    <li><a href="/api/v1/users/sch/linked">Linked/Unlinked</a></li>
+                    <li><a href="/api/v1/users/sch/routestatus">Route Status</a></li>
+                    <li><a href="/api/v1/users/sch/scheduleduty" class="active">Schedule Duty</a></li>
+                    <li><a href="/api/v1/users/sch/scheduledtrips">Scheduled Trips</a></li>
+                    <li><a href="/api/v1/users/sch/crew">Crew Availability</a></li>
                 </ul>
             </nav>
 
@@ -62,23 +70,100 @@
                     <div class="schedule-form">
                         <select>
                             <option>Route No.</option>
+                            <option value="192">192</option>
+                            <option value="212">212</option>
+                            <option value="423">423</option>
+                            <option value="448">448</option>
+                            <option value="473">473</option>
+                            <option value="507">507</option>
+                            <option value="543">543</option>
+                            <option value="578">578</option>
+                            <option value="620">620</option>
+                            <option value="724">724</option>
+                            <option value="761">761</option>
+                            <option value="764">764</option>
+                            <option value="832">832</option>
+                            <option value="871">871</option>
                         </select>
                         <select>
                             <option>Bus ID</option>
+                            <option value="101">101</option>
+                            <option value="102">102</option>
+                            <option value="103">103</option>
+                            <option value="104">104</option>
+                            <option value="105">105</option>
+                            <option value="106">106</option>
+                            <option value="107">107</option>
+                            <option value="108">108</option>
+                            <option value="109">109</option>
+                            <option value="110">110</option>
+
+
                         </select>
                         <select>
                             <option>Origin</option>
+                            <option value="1">Route 1: Kashmiri Gate to Connaught Place</option>
+                            <option value="2">Route 2: Anand Vihar to Delhi Gate</option>
+                            <option value="3">Route 3: Dwarka Sector 21 to Kashmiri Gate</option>
+                            <option value="4">Route 4: Sarai Kale Khan to Delhi Gate</option>
+                            <option value="5">Route 5: Rohini Sector 15 to Barakhamba Road</option>
+                            <option value="6">Route 6: JNU to Connaught Place</option>
+                            <option value="7">Route 7: Vasant Vihar to Bhikaji Cama Place</option>
+                            <option value="8">Route 8: Najafgarh to Delhi Gate</option>
+                            <option value="9">Route 9: Mayur Vihar to Tis Hazari</option>
+                            <option value="10">Route 10: Kalkaji to Chandni Chowk</option>
+
                         </select>
                         <select>
                             <option>Destination</option>
+                            <option value="1">Route 1: Kashmiri Gate to Connaught Place</option>
+                            <option value="2">Route 2: Anand Vihar to Delhi Gate</option>
+                            <option value="3">Route 3: Dwarka Sector 21 to Kashmiri Gate</option>
+                            <option value="4">Route 4: Sarai Kale Khan to Delhi Gate</option>
+                            <option value="5">Route 5: Rohini Sector 15 to Barakhamba Road</option>
+                            <option value="6">Route 6: JNU to Connaught Place</option>
+                            <option value="7">Route 7: Vasant Vihar to Bhikaji Cama Place</option>
+                            <option value="8">Route 8: Najafgarh to Delhi Gate</option>
+                            <option value="9">Route 9: Mayur Vihar to Tis Hazari</option>
+                            <option value="10">Route 10: Kalkaji to Chandni Chowk</option>
+
                         </select>
                         <input type="date" name="date">
                         <input type="time" name="time">
-                        <select>
+
+
+                        <select name="drivers" id="drivers">
                             <option>Driver</option>
+                            <option value="1">Rajesh Kumar</option>
+                            <option value="2">Vijay Singh</option>
+                            <option value="3">Amit Sharma</option>
+                            <option value="4">Deepak Verma</option>
+                            <option value="5">Sunil Yadav</option>
+                            <option value="6">Rakesh Gupta</option>
+                            <option value="7">Anil Pandey</option>
+                            <option value="8">Manoj Chauhan</option>
+                            <option value="9">Pawan Kumar</option>
+                            <option value="10">Suresh Bhatia</option>
+                            <option value="11">Mukesh Rathi</option>
+                            <option value="12">Vikram Singh</option>
+                            <option value="13">Ravi Mishra</option>
+                            <option value="14">Suraj Malhotra</option>
+                            <option v </select>
                         </select>
                         <select>
                             <option>Conductor</option>
+                            <option value="Jatin mishra">John Doe</option>
+                            <option value="Jay Sharma">Jane Smith</option>
+                            <option value="Amit Kumar">Amit Kumar</option>
+                            <option value="Priya Sharma">Priya Sharma</option>
+                            <option value="Ravi Patel">Ravi Patel</option>
+                            <option value="Neha Singh">Neha Singh</option>
+                            <option value="Rajesh Gupta">Rajesh Gupta</option>
+                            <option value="Anjali Verma">Anjali Verma</option>
+                            <option value="Vikram Saini">Vikram Saini</option>
+                            <option value="Simran Kaur">Simran Kaur</option>
+
+
                         </select>
                     </div>
                     <button class="submit-btn">SUBMIT</button>
@@ -86,8 +171,8 @@
             </section>
         </div>
     </div>
-    <script src="/dtc-front-end/public/js/datetime.js"></script>
-    <script src="/dtc-front-end/public/js/script.js"></script>
+    <script src="/js/datetime.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
