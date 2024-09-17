@@ -77,21 +77,46 @@
                  // calender
     
                  <div class="dropdown-button">
-                    <label for="date">Select Date:</label>
-                    <input type="date" id="date" name="date">
+                    <button class="dropdown-button">Calendar <i class="material-icons">arrow_drop_down</i></button>
+                    <div class="dropdown-content">
+                        <input type="text" id="datepicker" placeholder="Select Date">
+                    </div>
                 </div>
 
                 // route 
 
-                    <div class="dropdown">
-                        <button class="dropdown-button">Route <i class="material-icons">arrow_drop_down</i></button>
-                    </div>
+                <select class="dropdown-button">
+                    <option>Route</option>
+                  
+                    <option value="192">192</option>
+                    <option value="212">212</option>
+                    <option value="423">423</option>
+                    <option value="448">448</option>
+                    <option value="473">473</option>
+                    <option value="507">507</option>
+                    <option value="543">543</option>
+                    <option value="578">578</option>
+                    <option value="620">620</option>
+                    <option value="724">724</option>
+                    <option value="761">761</option>
+                    <option value="764">764</option>
+                    <option value="832">832</option>
+                    <option value="871">871</option>
+               
+
+                </select>
                     
                     //shift 
 
-                    <div class="dropdown">
-                        <button class="dropdown-button">Shift <i class="material-icons">arrow_drop_down</i></button>
-                    </div>
+                    <select class="dropdown-button">
+                        <option>Shift</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="late-night">Late Night</option>
+                    </select>
+
+                    
 
                     // search 
                     <button class="search-button">Search</button>
