@@ -33,7 +33,7 @@
 }
 
 .dropdown-button {
-    background-color: #FFAA33; /* Orange color for dropdown buttons */
+    background: linear-gradient(to right, #ffcc80, #ffab40); /* Orange color for dropdown buttons */
     color: black;
     padding: 15px 35px; /* Increase padding for larger button size */
     border: none;
