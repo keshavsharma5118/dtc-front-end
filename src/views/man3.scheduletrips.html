@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTC Sahayak</title>
+    <title>Scheduled Trips</title>  // 1 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dtc-front-end/public/css/man.util.css">
     <link rel="stylesheet" href="/dtc-front-end/public/css/man3.scheduletrips.css">
@@ -69,16 +69,31 @@
                 <div class="section-header">
                     <button class="section-button">Scheduled Trips</button>
                 </div>
+
+                //below scheduled trips 
+
                 <div class="filter-controls">
-                    <div class="dropdown">
-                        <button class="dropdown-button">Calendar <i class="material-icons">arrow_drop_down</i></button>
-                    </div>
+
+                 // calender
+    
+                 <div class="dropdown-button">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                // route 
+
                     <div class="dropdown">
                         <button class="dropdown-button">Route <i class="material-icons">arrow_drop_down</i></button>
                     </div>
+                    
+                    //shift 
+
                     <div class="dropdown">
                         <button class="dropdown-button">Shift <i class="material-icons">arrow_drop_down</i></button>
                     </div>
+
+                    // search 
                     <button class="search-button">Search</button>
                 </div>
                 <div class="table-container">
